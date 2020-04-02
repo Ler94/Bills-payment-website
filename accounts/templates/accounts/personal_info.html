@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="card" id="personal_info">
+    <p class="card-header text-center"><strong>Personal info</strong></p>
+    <p class="card-body text-center">Name is : {{first_name}}</p>
+    <p class="card-body text-center">Second name: {{second_name}}</p>
+    <p class="card-body text-center">Adress: {{city}}, {{street}}, {{home_number}}</p>
+    <p class="card-body text-center">Phone: {{phone_number}}</p>
+    <a href="{% url 'accounts:edit' %}" class="btn btn-success" id="update">Update</a>
+
+</div>
+
+
+
+
+
+{% endblock %}
+{% block child %}{% endblock %}

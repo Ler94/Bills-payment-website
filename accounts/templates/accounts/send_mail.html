@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+
+<form method="post" id='send_mail'>
+    <p><h1>Send us a message</h1></p>
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <div class="form-actions">
+      <button type="submit" class="btn btn-success">Send</button>
+    </div>
+    {{text}}
+</form>
+{% endblock %}
+{% block child %}{% endblock %}

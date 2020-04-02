@@ -1,0 +1,78 @@
+#bg{
+ background-repeat: no-repeat;
+}
+
+#personal_info{
+  width: 300px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+#update{
+  width: 80px;
+  margin: auto;
+}
+#signup{
+  margin-top: 50px;
+}
+#welcome_message{
+  text-align: center;
+  margin-top: 400px;
+}
+
+#welcome{
+  margin-top: 300px;
+  text-align: center;
+  display: block;
+}
+
+#pay{
+  width: 300px;
+  height: 100px;
+ margin-top: 40px;
+ margin-left: 400px;
+ margin-right: 400px;
+}
+
+#usericon{
+
+  color: white;
+}
+
+#details{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 180px;
+}
+
+#send_mail{
+  width: 500px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+#credit_card{
+  margin-top: 250px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#cvv{
+  width: 20%;
+}
+#year{
+  width: 20%;
+}
+#cardholder{
+  width: 70%
+}
+#card_number{
+  width: 400px;
+}
+#envelope{
+  color: white;
+  margin-top: 12px;
+  margin-right: 10px
+}

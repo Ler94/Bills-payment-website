@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+
+{% block content %}
+
+<div class="container" id="details">
+
+    <p><a href="{% url 'accounts:personal' %}">PERSONAL INFO</a></p>
+    <p><a href="{% url 'accounts:nehasim' %}">ASSETS</a></p>
+    <p><a href="{% url 'accounts:credit_card' %}">PAYMENTS</a></p>
+    <p><a href="#">PAYMENT METHOD</a></p>
+
+
+</div>
+
+{% endblock %}
+
+{% block child %}{% endblock %}

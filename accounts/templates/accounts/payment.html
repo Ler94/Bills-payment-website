@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load bootstrap4 %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="rectangle">
+    <div class="container">
+      <form method="POST" id="credit_card">
+          {% csrf_token %}
+          <div id="cardholder">
+            {{ form.CardholderName|as_crispy_field }}
+          </div>
+          <div class="row">
+            <div class="col-6" id="card_number">
+              {{ form.cc_number|as_crispy_field }}
+            </div>
+            <div id='cvv'>
+              {{ form.cc_code|as_crispy_field }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              {{ form.Expiration_Date|as_crispy_field}}
+            </div>
+            <div id="year">
+              {{ form.Year|as_crispy_field}}
+            </div>
+          </div>
+
+          {% buttons %}
+            <button type="submit" class="btn btn-primary btn-large">Save</button>
+          {% endbuttons %}
+          {{text}}
+      </form>
+    </div>
+</div>
+
+
+{% endblock %}
+{% block child %}{% endblock %}
